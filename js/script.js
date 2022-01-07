@@ -3,11 +3,11 @@ let turnOff = document.querySelector('#turnOff')
 let lamp = document.querySelector('#lamp')
 
 function lampOn(){
-  lamp.src = 'img/lamp-on.gif'
+  lamp.src = './img/lamp-on.gif'
 }
 
 function lampOff(){
-  lamp.src = 'img/lamp-off.gif'
+  lamp.src = './img/lamp-off.gif'
 }
 
 turnOn.addEventListener('click', lampOn)
