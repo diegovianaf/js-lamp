@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+#lamp {
+  width: 120px;
+  margin: 20px;
+}  
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  background: transparent;
+  padding: 5px;
+  margin: 0 5px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 250ms ease;
+}
+
+#turnOn:hover {
+  color: white;
+  background: #049c04;
+}
+
+#turnOff:hover {
+  color: white;
+  background: #b41515;
+}
