@@ -13,9 +13,11 @@ function lampOnOff(){
   if (turnOnOff.textContent === 'Turn On'){
     lampOn()
     turnOnOff.textContent = 'Turn Off'
+    turnOnOff.classList.add('btnOff')
   } else{
     lampOff()
     turnOnOff.textContent = 'Turn On'
+    turnOnOff.classList.remove('btnOff')
   }
 }
 
