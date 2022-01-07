@@ -21,7 +21,6 @@
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
-  background: transparent;
   padding: 5px;
   margin: 0 5px;
   letter-spacing: 1.5px;
@@ -30,12 +29,3 @@
   transition: background-color 250ms ease;
 }
 
-#turnOn:hover {
-  color: white;
-  background: #049c04;
-}
-
-#turnOff:hover {
-  color: white;
-  background: #b41515;
-}

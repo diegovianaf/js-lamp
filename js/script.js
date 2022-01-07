@@ -1,6 +1,5 @@
-let turnOn = document.querySelector('#turnOn')
-let turnOff = document.querySelector('#turnOff')
 let lamp = document.querySelector('#lamp')
+let turnOnOff = document.querySelector('#turnOnOff')
 
 function lampOn(){
   lamp.src = './img/lamp-on.gif'
@@ -10,5 +9,15 @@ function lampOff(){
   lamp.src = './img/lamp-off.gif'
 }
 
-turnOn.addEventListener('click', lampOn)
-turnOff.addEventListener('click', lampOff)
+function lampOnOff(){
+  if (turnOnOff.textContent === 'Turn On'){
+    lampOn()
+    turnOnOff.textContent = 'Turn Off'
+  } else{
+    lampOff()
+    turnOnOff.textContent = 'Turn On'
+  }
+}
+
+turnOnOff.addEventListener('click', lampOnOff)
+
